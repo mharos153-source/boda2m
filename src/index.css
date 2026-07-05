@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Pinyon+Script&family=Open+Sans:wght@300;400;600;700&family=Tangerine:wght@700&family=Monsieur+La+Doulaise&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-serif-luxury: "Playfair Display", "Cinzel", Georgia, serif;
+  --font-cursive-romance: "Great Vibes", "Alex Brush", cursive;
+  --font-cursive-pinyon: "Pinyon Script", cursive;
+  --font-cursive-tangerine: "Tangerine", cursive;
+  --font-cursive-doulaise: "Monsieur La Doulaise", cursive;
+  --font-sans-clean: "Montserrat", "Open Sans", sans-serif;
+  --font-sans-opensans: "Open Sans", sans-serif;
+  
+  --color-serenity-light: #C7D9EA;
+  --color-serenity-base: #89A6C8;
+  --color-serenity-ice: #F0F4F8;
+  --color-navy-royal: #153E7E;
+  --color-navy-dark: #0B1D3A;
+  --color-luxury-gold: #D4AF37;
+  --color-luxury-silver: #C0C0C0;
+}
+
+@layer utilities {
+  /* Ken Burns Animation */
+  @keyframes kenburns {
+    0% {
+      transform: scale(1) translate(0, 0);
+    }
+    50% {
+      transform: scale(1.08) translate(-1%, 0.5%);
+    }
+    100% {
+      transform: scale(1) translate(0, 0);
+    }
+  }
+
+  .animate-kenburns {
+    animation: kenburns 24s ease-in-out infinite;
+  }
+
+  /* Shine effect */
+  @keyframes shine {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 200%;
+    }
+  }
+
+  .animate-shine {
+    animation: shine 4s infinite ease-out;
+  }
+
+  /* Shimmer particle */
+  @keyframes shimmer-float {
+    0% {
+      transform: translateY(110vh) translateX(0) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.6;
+    }
+    90% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateY(-10vh) translateX(50px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+  /* Arch mask styling */
+  .arch-mask {
+    border-radius: 9999px 9999px 20px 20px;
+    overflow: hidden;
+  }
+
+  /* Glassmorphism card */
+  .glass-card {
+    background: rgba(240, 244, 248, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .glass-card-dark {
+    background: rgba(11, 29, 58, 0.65);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(137, 166, 200, 0.25);
+  }
+
+  /* Wax seal pulsing */
+  @keyframes pulse-gold {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px 10px rgba(212, 175, 55, 0.2);
+    }
+  }
+
+  .pulse-gold {
+    animation: pulse-gold 2s infinite;
+  }
+}
+
+/* Custom scrollbar for premium touch */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F0F4F8;
+}
+::-webkit-scrollbar-thumb {
+  background: #89A6C8;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #153E7E;
+}
+

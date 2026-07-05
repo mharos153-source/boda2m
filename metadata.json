@@ -1,0 +1,6 @@
+{
+  "name": "Invitación de Boda",
+  "description": "Una invitación de boda digital de lujo y alta costura para Miguel & Mariluz, con sobre interactivo, cuenta regresiva, galería de fotos, itinerario y RSVP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
