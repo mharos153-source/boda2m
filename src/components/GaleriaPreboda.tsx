@@ -9,16 +9,16 @@ export default function GaleriaPreboda() {
 
   // 10 premium coastal/navy matches preboda images
   const images = [
-    { src: 'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=600', caption: 'Nuestro encuentro frente al infinito azul' },
-    { src: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=600', caption: 'Donde el cielo y la marea se abrazan' },
-    { src: 'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=600', caption: 'Promesas escritas sobre la brisa' },
-    { src: 'https://images.unsplash.com/photo-1549417229-aa67d3263c09?q=80&w=600', caption: 'Acepto caminar cada sendero contigo' },
-    { src: 'https://images.unsplash.com/photo-1532712938310-34cb3982ef74?q=80&w=600', caption: 'Tu mirada es mi atardecer favorito' },
-    { src: 'https://images.unsplash.com/photo-1591604466107-ec97de577aff?q=80&w=600', caption: 'Enlazar nuestras manos para siempre' },
-    { src: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=600', caption: 'El inicio de este hermoso capítulo' },
-    { src: 'https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=600', caption: 'Nuestra risa es dulce melodía' },
-    { src: 'https://images.unsplash.com/photo-1507504038482-76210f5c2758?q=80&w=600', caption: 'Un refugio de amor en este mundo' },
-    { src: 'https://images.unsplash.com/photo-1510076857177-7470066a490b?q=80&w=600', caption: 'Eternidad, un latido a la vez' },
+    { src: '/assets/GALERIAS/Album/Album1.webp', caption: 'Mi lugar favorito es contigo' },
+    { src: '/assets/GALERIAS/Album/Album2.webp', caption: 'Dos almas en un pacto sagrado de Dios' },
+    { src: '/assets/GALERIAS/Album/Album3.webp', caption: 'Mi lugar favorito es contigo' },
+    { src: '/assets/GALERIAS/Album/Album4.webp', caption: 'Escribiendo nuestro camino juntos' },
+    { src: '/assets/GALERIAS/Album/Album5.webp', caption: 'Tu mirada es mi atardecer favorito' },
+    { src: '/assets/GALERIAS/Album/Album6.webp', caption: 'Un hogar edificado sobre la Roca' },
+    { src: '/assets/GALERIAS/Album/Album7.webp', caption: 'Dos corazones en un mismo latido' },
+    { src: '/assets/GALERIAS/Album/Album8.webp', caption: 'Nuestra historia fue escrita por Dios' },
+    { src: '/assets/GALERIAS/Album/Album9.webp', caption: 'Cordón de tres dobleces indestructible' },
+    { src: '/assets/GALERIAS/Album/Album10.webp', caption: 'Dios bendice nuestra historia' },
   ];
 
   const handlePrev = () => {

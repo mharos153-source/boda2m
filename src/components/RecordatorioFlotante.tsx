@@ -90,7 +90,7 @@ export default function RecordatorioFlotante() {
                         Faltan <span className="font-bold text-[#153E7E]">{diffDays} días</span> para la boda de <span className="font-semibold">Miguel & Mariluz</span>.
                       </p>
                       <p className="mt-2 font-bold text-navy-royal tracking-wide border-t border-gray-100 pt-1.5">
-                        Activa recordatorio para no perderte el gran día
+                        Activa el recordatorio para no perderte el gran día
                       </p>
                     </div>
                   </div>
@@ -131,7 +131,7 @@ export default function RecordatorioFlotante() {
                     ¡Recordatorio Activado!
                   </h4>
                   <p className="font-sans-clean text-xs text-navy-dark/95 leading-relaxed mt-1.5 px-2">
-                    Las alertas automáticas han sido programadas con éxito en tu dispositivo. ¡Te esperamos! ✨💍
+                    Se programó con éxito en tu dispositivo. ¡Te esperamos! ✨💍
                   </p>
                 </div>
               </motion.div>

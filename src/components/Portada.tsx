@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 interface PortadaProps {
   onOpen: () => void;
+  onStartOpening?: () => void;
 }
 
-export default function Portada({ onOpen }: PortadaProps) {
+export default function Portada({ onOpen, onStartOpening }: PortadaProps) {
   const [isOpening, setIsOpening] = useState(false);
   const [isFullyOpen, setIsFullyOpen] = useState(false);
   const [particles, setParticles] = useState<Array<{ id: number; left: number; size: number; delay: number; duration: number; color: string; opacity: number }>>([]);
@@ -32,6 +33,11 @@ export default function Portada({ onOpen }: PortadaProps) {
   const handleOpenInvitation = () => {
     if (isOpening) return;
     setIsOpening(true);
+
+    // Call start music immediately within the click interaction stack
+    if (onStartOpening) {
+      onStartOpening();
+    }
 
     // Dynamic elegant opening folding phases
     setTimeout(() => {

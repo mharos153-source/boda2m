@@ -7,18 +7,12 @@ export default function VolumeControl() {
   const [isDragging, setIsDragging] = useState(false);
   const trackRef = useRef<HTMLDivElement>(null);
 
-  // Sync volume with YouTube background player via postMessage
+  // Sync volume with HTML5 background audio player
   const updatePlayerVolume = (value: number) => {
-    const iframe = document.getElementById('youtube-audio') as HTMLIFrameElement;
-    if (iframe && iframe.contentWindow) {
-      iframe.contentWindow.postMessage(
-        JSON.stringify({
-          event: 'command',
-          func: 'setVolume',
-          args: [value]
-        }),
-        '*'
-      );
+    const audio = document.getElementById('bg-audio') as HTMLAudioElement;
+    if (audio) {
+      // HTML5 audio volume range is 0.0 to 1.0
+      audio.volume = value / 100;
     }
   };
 
@@ -26,10 +20,10 @@ export default function VolumeControl() {
   useEffect(() => {
     updatePlayerVolume(volume);
     
-    // Periodically sync volume in case iframe reloaded or wasn't fully ready
+    // Periodically sync volume in case player loaded or wasn't fully ready
     const interval = setInterval(() => {
       updatePlayerVolume(volume);
-    }, 2000);
+    }, 1000);
 
     return () => clearInterval(interval);
   }, [volume]);

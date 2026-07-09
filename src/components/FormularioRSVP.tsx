@@ -100,7 +100,7 @@ export default function FormularioRSVP() {
         <GoldLine />
 
         <p className="font-sans-clean text-[11px] text-navy-royal/60 font-medium tracking-wider uppercase mb-8">
-          Por favor, confirma antes del 15 de Julio de 2026
+          Por favor, confirma antes del 20 de Julio de 2026
         </p>
 
         {submitSuccess ? (
@@ -113,7 +113,7 @@ export default function FormularioRSVP() {
               ¡Asistencia Registrada!
             </h3>
             <p className="font-sans-clean text-xs text-navy-royal/90 leading-relaxed font-light px-4">
-              Gracias de todo corazón por confirmar tu respuesta. Todo detalle ha sido registrado con gracia para el gran día de <b>Miguel & Mariluz</b>. ¡Nos vemos pronto! 🕊️🤍
+              Gracias de todo corazón por confirmar tu respuesta. Todo detalle ha sido registrado para el gran día de <b>Miguel & Mariluz</b>. ¡Nos vemos pronto! 🕊️🤍
             </p>
             <div className="pt-4">
               <button
@@ -226,14 +226,14 @@ export default function FormularioRSVP() {
                 htmlFor="mensaje"
                 className="font-sans-clean text-[10px] uppercase tracking-wider text-navy-royal font-semibold block"
               >
-                Palabras para los futuros esposos (Felicitaciones o consejos):
+                Palabras para los futuros esposos:
               </label>
               <textarea
                 id="mensaje"
                 name="mensaje"
                 value={formData.mensaje}
                 onChange={handleChange}
-                placeholder="Escribe tus hermosos deseos o consejos aquí..."
+                placeholder="Escribe tus felicitaciones o consejos aquí..."
                 rows={3}
                 className="w-full bg-slate-50/70 border-b-2 border-serenity-light focus:border-luxury-gold py-2.5 px-3 text-xs font-sans-clean rounded-t-lg transition-all text-navy-dark focus:outline-none resize-none"
               />
@@ -257,7 +257,7 @@ export default function FormularioRSVP() {
               ) : (
                 <>
                   <CalendarHeart className="w-4 h-4 mr-0.5" />
-                  <span>CONFIRMAR ASISTENCIA</span>
+                  <span> CONFIRMAR ASISTENCIA</span>
                 </>
               )}
             </button>

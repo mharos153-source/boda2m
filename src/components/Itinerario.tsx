@@ -37,7 +37,7 @@ export default function Itinerario() {
                 Unión Religiosa
               </h3>
               <p className="font-sans-clean text-[9px] text-[#A0AEC0] uppercase tracking-wider">
-                La Ceremonia Sagrada
+                La Ceremonia
               </p>
             </div>
           </div>
@@ -97,7 +97,7 @@ export default function Itinerario() {
                 La Gran Celebración
               </h3>
               <p className="font-sans-clean text-[9px] text-[#A0AEC0] uppercase tracking-wider">
-                La Recepción Festiva
+                La Recepción
               </p>
             </div>
           </div>

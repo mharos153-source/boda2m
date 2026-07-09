@@ -3,11 +3,11 @@ import { GoldLine, InfinityRings } from './Ornament';
 import VolumeControl from './VolumeControl';
 
 const SLIDESHOW_IMAGES = [
-  "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1000&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1000&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1591604466107-ec97de577aff?q=80&w=1000&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=1000&auto=format&fit=crop"
+  "/assets/GALERIAS/Portada/Album8.webp",
+  "/assets/GALERIAS/Portada/Album3.webp",
+  "/assets/GALERIAS/Portada/Portada3.webp",
+  "/assets/GALERIAS/Portada/Portada4.webp",
+  "/assets/GALERIAS/Portada/Portada5.webp"
 ];
 
 export default function Hero() {
@@ -16,7 +16,7 @@ export default function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % SLIDESHOW_IMAGES.length);
-    }, 2000); // 2 seconds interval as requested
+    }, 1700); // 1.7 seconds interval as requested
     return () => clearInterval(timer);
   }, []);
 
@@ -27,7 +27,7 @@ export default function Hero() {
 
       {/* Cursive Subtitle */}
       <p className="font-cursive-romance text-navy-royal text-2xl sm:text-3xl md:text-4xl mb-4 drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)] animate-pulse">
-        Tenemos el agrado de invitarlos a Nuestra Boda
+        Tenemos el agrado de invitarte a Nuestra Boda
       </p>
 
       {/* Cathedral Arch Masked Hero Photo with smooth cross-fade slideshow animation */}
@@ -55,7 +55,7 @@ export default function Hero() {
 
       {/* Centered romantic scripture quote right below the arch photo */}
       <p className="font-cursive-romance text-navy-royal text-xl sm:text-2xl mt-4 mb-2 px-4 text-center select-none drop-shadow-[0_0.5px_0.5px_rgba(255,255,255,0.7)] max-w-xs leading-relaxed">
-        "Lo que Dios unió, que no lo separe el hombre"
+        "Lo que Dios juntó, que no lo separe el hombre"
       </p>
 
       {/* Infinity Rings Ornament Below Photo */}
@@ -100,13 +100,7 @@ export default function Hero() {
       </div>
 
       {/* Biblic Scripture integrated elegantly */}
-      <div className="mt-8 p-6 rounded-2xl bg-gradient-to-b from-serenity-ice/85 to-white/90 border border-serenity-light shadow-[0_10px_30px_rgba(137,166,200,0.15)] relative overflow-hidden">
-        {/* Gold Corner Accents */}
-        <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-luxury-gold/50 rounded-tl-md"></div>
-        <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-luxury-gold/50 rounded-tr-md"></div>
-        <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-luxury-gold/50 rounded-bl-md"></div>
-        <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-luxury-gold/50 rounded-br-md"></div>
-
+      <div className="mt-8 px-6 py-4 text-center max-w-sm mx-auto">
         <span className="text-2xl text-luxury-gold block mb-2 font-serif-luxury">“</span>
         <blockquote className="font-sans-clean italic text-xs md:text-sm text-navy-dark/90 leading-relaxed font-light px-2">
           "Mejor son dos que uno, porque obtienen más fruto de su esfuerzo."

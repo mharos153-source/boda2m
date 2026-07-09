@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Gift, Copy, Check } from 'lucide-react';
 import { GoldLine } from './Ornament';
-import qrImage from '@/assets/GALERIAS/QRyape/FotoQR yape.jpeg';
+import qrImage from '@/assets/GALERIAS/Album/QRyape.webp';
 
 export default function GestoDeAmor() {
   const [copied, setCopied] = useState(false);
@@ -21,7 +21,9 @@ export default function GestoDeAmor() {
     const isIOS = /iPad|iPhone|iPod/.test(ua) && !(window as any).MSStream;
 
     if (isAndroid) {
-      window.location.href = "intent://#Intent;scheme=yape;package=com.bcp.innovabcp.yape;end";
+      // Use Android Intent syntax for Google Chrome and Chromium-based browsers on Android
+      // This launches the native app if installed, and seamlessly redirects to the Google Play Store fallback if not, preventing error pages.
+      window.location.href = "intent://#Intent;scheme=yape;package=com.innovabcp.yapeapp;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.innovabcp.yapeapp;end";
     } else if (isIOS) {
       window.location.href = "yape://";
       setTimeout(() => {
@@ -63,10 +65,10 @@ export default function GestoDeAmor() {
           >
             <div className="flex items-center space-x-3">
               <span className="font-serif-luxury text-sm font-semibold text-navy-dark tracking-wide">
-                🎁 Mi Gesto de Amor
+                  Mi Gesto de Amor 🎁
               </span>
             </div>
-            <span className="text-luxury-gold font-bold text-lg leading-none select-none">⇓</span>
+            <span className="text-luxury-gold font-bold text-lg leading-none select-none">⁝</span>
           </div>
 
           {/* Content Space (Fully visible, not collapsed) */}
@@ -125,7 +127,7 @@ export default function GestoDeAmor() {
 
             {copied && (
               <span className="font-sans-clean text-[10px] text-green-600 font-bold tracking-wider animate-pulse uppercase">
-                ¡Súper! Número copiado al portapapeles 📋✓
+                Número copiado al portapapeles 📋✓
               </span>
             )}
           </div>

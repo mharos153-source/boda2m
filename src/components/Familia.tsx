@@ -11,7 +11,7 @@ export default function Familia() {
           Con la bendición de Dios, nuestros padres, padrinos y testigos.
         </h3>
         <p className="font-sans-clean text-xs text-navy-royal/80 leading-relaxed font-light">
-          Con gratitud a Dios y alegría en nuestros corazones, les invitamos a ser parte de nuestra unión.
+          Con gratitud a Dios y alegría en nuestros corazones, les invitamos a ser parte de nuestra boda.
         </p>
       </div>
 
